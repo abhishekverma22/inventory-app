@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sale-Invoice - Glimmer Grid - Jewellery Inventory</title>
+  <link rel="stylesheet" href="../02_css_file/main.css">
+  <link rel="stylesheet" href="../02_css_file/invoice.css">
+  <script src="../03_javascrpit_file/saleInvoice.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="logo">
+      <img src="../images/logo.gif" alt="logo">
+      <div class="logoname">
+        <h2>Glimmer Grid</h2>
+        <p>Your Jewels, Our Precision.</p>
+      </div>
+    </nav>
+
+    <nav class="navitems">
+      <!-- <a href="./dashboard.html">dashboard</a> -->
+      <a href="./invoice.html" target="_blank" class="active">sale - Invoice</a>
+      <!-- <a href="./scheme.html">scheme</a>
+      <a href="./login_page.html">logout</a> -->
+    </nav>
+  </header>
+
+  <main class="invoice">
+
+    <div class="form">
+      <h2>Add Item</h2>
+      <div class="input">
+        <label for="metal">Select Metal</label>
+        <select name="metal" id="metal">
+          <option>--None--</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="Diamond">Diamond</option>
+        </select>
+
+        <label for="purity">Purity</label>
+        <select name="purity" id="purity">
+          <option value="">None</option>
+          <option value="24kt">24Kt</option>
+          <option value="22kt">22Kt</option>
+          <option value="18kt">18Kt</option>
+          <option value="14kt">14Kt</option>
+          <option value="silver">Silver</option>
+          <option value="silver-925">Silver-925</option>
+        </select>
+      </div>
+    </div>
+
+  </main>
+  
+</body>
+</html>

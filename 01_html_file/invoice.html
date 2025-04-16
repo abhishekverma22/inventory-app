@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sale-Invoice - Glimmer Grid - Jewellery Inventory</title>
+  <link rel="stylesheet" href="../02_css_file/main.css">
+  <link rel="stylesheet" href="../02_css_file/invoice.css">
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+  <script src="../03_javascrpit_file/saleInvoice.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="logo">
+      <img src="../images/logo.gif" alt="logo">
+      <div class="logoname">
+        <h2>Glimmer Grid</h2>
+        <p>Your Jewels, Our Precision.</p>
+      </div>
+    </nav>
+
+    <nav class="navitems">
+      <!-- <a href="./dashboard.html">dashboard</a> -->
+      <a href="./invoice.html" target="_blank" class="active">sale - Invoice</a>
+      <!-- <a href="./scheme.html">scheme</a>
+      <a href="./login_page.html">logout</a> -->
+    </nav>
+  </header>
+
+  <main class="invoice">
+    <div class="container">
+      
+      <div class="customerDetails">
+        <div class="leftSide">
+          <h3>Customer Details</h3>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" name="address" id="address">
+        </div>
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="number" id="phone" name="phone">
+        </div>
+        </div>
+
+        <div class="rightSide">
+          <h3>Extra Details</h3>
+          <div>
+            <label for="gst">GST IN:</label>
+            <input type="text" id="gst" name="gst">
+          </div>
+          <div>
+            <label for="birth">Birth / Anniversary</label>
+            <input type="date" id="birth" name="birth">
+          </div>
+          <div>
+            <label for="optional">Optional Details:</label>
+            <input type="text" id="optional" name="optional">
+          </div>
+        </div>
+
+        <div class="invoiceDetails">
+          <h3>Invoice Details</h3>
+          <div>
+            <p>Date: <span class="date">14-04-2025</span></p>
+          </div>
+          <div>
+            <label for="invoiceNumber">Invoice Number</label>
+            <input type="text" placeholder="Invoice Number..." readonly>
+          </div>
+          <div>
+            <label for="searchInvoice">Search Invoice</label>
+            <input type="text" placeholder="search Invoice...">
+          </div>
+
+        </div>
+        <div class="tagDetails">
+          <h3>Tag Details</h3>
+          <div>
+            <label for="tagnumber">Tag Number</label>
+            <input type="text" placeholder="Tag Number..." >
+          </div>
+          <div class="btn">
+           <button id="tagSearch">Search</button>
+          </div>
+
+        </div>
+
+      <div class="">
+
+      </div>
+
+    </div>
+    
+
+  </main>
+  
+</body>
+</html>

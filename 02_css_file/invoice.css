@@ -1,0 +1,91 @@
+.invoice{
+  width: 100vw;
+  height: 88vh;
+  background-color: rgba(255, 209, 117, 0.652);  
+  padding: 10px;
+}
+.container{
+  height: 100%;
+  background-color: rgb(131, 130, 130);
+}
+.top{
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+.customerDetails{
+  background-color: cadetblue;
+  display: flex;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid orange
+}
+.leftSide, .rightSide, .invoiceDetails, .tagDetails{
+  border-right: 1px solid orange;
+  padding: 10px;
+}
+.tagDetails{
+  border: none;
+}
+.leftSide h3, .rightSide h3, .invoiceDetails h3, .tagDetails h3{
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid orange;
+  font-size: 16px;
+}
+.customerDetails label{
+  font-weight: 700;
+}
+.leftSide div input, .rightSide div input, .invoiceDetails div input, .tagDetails div input{
+  width: 90%;
+  outline: none;
+  border: none;
+  height: 2px;
+  border-radius:5px;
+  margin-top: 5px;
+  margin-bottom: 9px;
+  padding-left: 10px;
+  text-transform: capitalize;
+  background-color: #dddcdc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  padding: 16px;
+}
+.rightSide div input[type=date]{
+  text-transform: uppercase;
+}
+.invoiceDetails div p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  border: 1px solid salmon;
+  text-align: center;
+  padding: 5px 0px;
+  background-color: rgb(0, 0, 0);
+  color: #dddcdc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.invoiceDetails div p span{
+  color: #dddcdc;
+}
+.invoiceDetails div{
+  margin-top: 10px;
+}
+.tagDetails .btn{
+  text-align: center;
+  margin-top: 20px;
+}
+.tagDetails button{
+  width: 40%;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 900;
+  border: none;
+  border-radius: 14px;
+  background-color: rgb(255, 145, 0);
+  color: rgb(0, 0, 0);
+}
