@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
   <script src="../03_javascrpit_file/saleInvoice.js"></script>
 </head>
+
 <body>
 
   <header>
@@ -30,28 +32,28 @@
 
   <main class="invoice">
     <div class="container">
-      
+
       <div class="customerDetails">
         <div class="leftSide">
           <h3>Customer Details</h3>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" required>
-        </div>
-        <div>
-          <label for="address">Address:</label>
-          <input type="text" name="address" id="address">
-        </div>
-        <div>
-          <label for="phone">Phone:</label>
-          <input type="number" id="phone" name="phone">
-        </div>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone">
+          </div>
         </div>
 
         <div class="rightSide">
           <h3>Extra Details</h3>
           <div>
-            <label for="gst">GST IN:</label>
+            <label for="gst">GST IN</label>
             <input type="text" id="gst" name="gst">
           </div>
           <div>
@@ -59,8 +61,8 @@
             <input type="date" id="birth" name="birth">
           </div>
           <div>
-            <label for="optional">Optional Details:</label>
-            <input type="text" id="optional" name="optional">
+            <label for="pan">PAN Number</label>
+            <input type="text" id="pan" name="pan">
           </div>
         </div>
 
@@ -83,22 +85,145 @@
           <h3>Tag Details</h3>
           <div>
             <label for="tagnumber">Tag Number</label>
-            <input type="text" placeholder="Tag Number..." >
+            <input type="text" placeholder="Tag Number...">
           </div>
           <div class="btn">
-           <button id="tagSearch">Search</button>
+            <button id="tagSearch">Search</button>
           </div>
 
         </div>
-
-      <div class="">
-
       </div>
+      <!-- new items details -->
+      <section class="form">
+        <div class="heading">Items Details:</div>
+        <table class="newProductData" border="1px">
+          <caption>
+            New Ornament Details
+          </caption>
+          <thead>
+            <tr>
+              <th>Sl.No.</th>
+              <th>Item name<br>Tag Number</th>
+              <th>purity</th>
+              <th>rate per 10gm</th>
+              <th>net weigth(gm)</th>
+              <th>gross weight(gm)</th>
+              <th>making charge percentage (%)</th>
+              <th>making charge total</th>
+              <th>other charge</th>
+              <th>price</th>
+              </t>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>ring</td>
+              <td>22kt</td>
+              <td contenteditable="true">85000</td>
+              <td contenteditable="true">2.5</td>
+              <td contenteditable="true">2.2</td>
+              <td contenteditable="true">15</td>
+              <td contenteditable="true">500</td>
+              <td contenteditable="true">800</td>
+              <td>56000</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>ring</td>
+              <td>22kt</td>
+              <td>85000</td>
+              <td>2.5</td>
+              <td>2.2</td>
+              <td>15</td>
+              <td>500</td>
+              <td>800</td>
+              <td>56000</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>ring</td>
+              <td>22kt</td>
+              <td>85000</td>
+              <td>2.5</td>
+              <td>2.2</td>
+              <td>15</td>
+              <td>500</td>
+              <td>800</td>
+              <td>56000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>03</th>
+              <th class="hidedata"></th>
+              <th class="hidedata"></th>
+              <th class="hidedata"></th>
+              <th>7.5</th>
+              <th>6.6</th>
+              <th class="hidedata"></th>
+              <th class="hidedata"></th>
+              <th>2400</th>
+              <th> 168000</th>
 
-    </div>
-    
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <!-- diamond details -->
+       <section class="diamonds">
+        <section class="newDiamondDetails">
+          <table class="form" border="1px">
+            <caption>
+              Old Diamonds
+            </caption>
+            <thead>
+              <tr>
+                <th>Sl.No.</th>
+                <th>net weigth(gm)</th>
+                <th>gross weight(gm)</th>
+                <th>Purchase Value</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>0.200</td>
+                <td>0.200</td>
+                <td>2000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="hidedata"></td>
+                <td>0.200</td>
+                <td>0.200</td>
+                <td>2000</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <section class="oldDiamondDetails">
+          <table class="form" border="1px">
+            <caption>
+             New Diamonds
+            </caption>
+            <thead>
+              <tr>
+                <th>sl no.</th>
+                <th>tag number</th>
+                <th>net weight</th>
+                <th>gross weight</th>
+                <th>rate</th>
+                <th>price</th>
+              </tr>
+            </thead>
+          </table>
+        </section>
+       </section>
+
 
   </main>
-  
+
 </body>
+
 </html>

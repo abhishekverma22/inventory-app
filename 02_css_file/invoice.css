@@ -1,20 +1,23 @@
-.invoice{
-  width: 100vw;
-  height: 88vh;
-  background-color: rgba(255, 209, 117, 0.652);  
+.invoice {
+  width: 100%;
+  /* height: 200vh; */
+  background-color: rgba(255, 209, 117, 0.652);
   padding: 10px;
 }
-.container{
+
+.container {
   height: 100%;
-  background-color: rgb(131, 130, 130);
+  /* background-color: rgb(131, 130, 130); */
 }
-.top{
+
+.top {
   text-align: center;
   text-decoration: underline;
   text-transform: uppercase;
   border-bottom: 1px solid;
 }
-.customerDetails{
+
+.customerDetails {
   background-color: cadetblue;
   display: flex;
   font-size: 12px;
@@ -22,29 +25,43 @@
   justify-content: space-evenly;
   border-bottom: 2px solid orange
 }
-.leftSide, .rightSide, .invoiceDetails, .tagDetails{
+
+.leftSide,
+.rightSide,
+.invoiceDetails,
+.tagDetails {
   border-right: 1px solid orange;
   padding: 10px;
 }
-.tagDetails{
+
+.tagDetails {
   border: none;
 }
-.leftSide h3, .rightSide h3, .invoiceDetails h3, .tagDetails h3{
+
+.leftSide h3,
+.rightSide h3,
+.invoiceDetails h3,
+.tagDetails h3 {
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 2px solid orange;
   font-size: 16px;
 }
-.customerDetails label{
+
+.customerDetails label {
   font-weight: 700;
 }
-.leftSide div input, .rightSide div input, .invoiceDetails div input, .tagDetails div input{
+
+.leftSide div input,
+.rightSide div input,
+.invoiceDetails div input,
+.tagDetails div input {
   width: 90%;
   outline: none;
   border: none;
   height: 2px;
-  border-radius:5px;
+  border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 9px;
   padding-left: 10px;
@@ -54,10 +71,12 @@
   font-size: 16px;
   padding: 16px;
 }
-.rightSide div input[type=date]{
+
+.rightSide div input[type=date] {
   text-transform: uppercase;
 }
-.invoiceDetails div p{
+
+.invoiceDetails div p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -69,17 +88,21 @@
   border-radius: 20px;
   font-size: 14px;
 }
-.invoiceDetails div p span{
+
+.invoiceDetails div p span {
   color: #dddcdc;
 }
-.invoiceDetails div{
+
+.invoiceDetails div {
   margin-top: 10px;
 }
-.tagDetails .btn{
+
+.tagDetails .btn {
   text-align: center;
   margin-top: 20px;
 }
-.tagDetails button{
+
+.tagDetails button {
   width: 40%;
   padding: 3px;
   font-size: 16px;
@@ -88,4 +111,89 @@
   border-radius: 14px;
   background-color: rgb(255, 145, 0);
   color: rgb(0, 0, 0);
+}
+
+.form {
+  background-color: rgb(215, 166, 166);
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.form .heading {
+  font-size: 20px;
+  font-family: Verdana, Geneva Tahoma, sans-serif;
+  text-transform: capitalize;
+  text-decoration: double underline gray;
+  font-weight: 700;
+  background-color: rgb(234, 255, 77);
+  text-shadow: 1px 1px 2px #ccc;
+  border-bottom: 2px solid orange;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.form caption{
+  margin: 10px auto;
+  font-size: 20px;
+  border: 1px solid;
+  background-color: #ffffff;
+}
+
+.newProductData, .newDiamondDetails, .oldDiamondDetails{
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(209, 206, 206);
+  table-layout: fixed;
+  /* border-collapse: collapse; */
+}
+
+.form thead tr th {
+  background-color: #ccc;
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 10px 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  
+}
+
+.form tbody tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: capitalize;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  padding: 8px;
+  text-align: center;
+}
+
+.form tfoot{
+  background-color: red;
+}
+
+/* diamonds details */
+.diamonds{
+  display: flex;
+  margin-top: 20px;
+  background-color: rgb(215, 166, 166);
+}
+.diamonds section table caption{
+  border: 1px solid;
+}
+
+/* new diamonds details */
+.diamonds section{
+  border: 1px solid;
+  height: 200px;
+  margin-left: 2px;
+}
+.diamonds section{
+  padding: 10px;
+}
+.hidedata{
+  background-color: rgb(215, 166, 166);
+  border: none;
 }
