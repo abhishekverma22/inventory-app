@@ -1,8 +1,10 @@
 .invoice {
   width: 100%;
   /* height: 200vh; */
-  background-color: rgba(255, 209, 117, 0.652);
-  padding: 10px;
+  background-image: url(../images/invoicebg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10px;
 }
 
 .container {
@@ -112,88 +114,60 @@
   background-color: rgb(255, 145, 0);
   color: rgb(0, 0, 0);
 }
-
-.form {
-  background-color: rgb(215, 166, 166);
-  width: 100%;
-  padding-bottom: 20px;
-}
-
-.form .heading {
-  font-size: 20px;
-  font-family: Verdana, Geneva Tahoma, sans-serif;
-  text-transform: capitalize;
-  text-decoration: double underline gray;
-  font-weight: 700;
-  background-color: rgb(234, 255, 77);
-  text-shadow: 1px 1px 2px #ccc;
-  border-bottom: 2px solid orange;
+.heading{
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+background-color: rgb(255, 234, 234);
+border: 2px solid rgb(255, 130, 84);
+border-radius: 10px;
+margin: 20px auto;
 }
-.form caption{
-  margin: 10px auto;
-  font-size: 20px;
+.newProductData{
+/* background-color: #dddcdc; */
+height: 200px; 
+overflow-y: auto;
+border: 1px solid;
+width: 100%;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead th{   
+  background-color: aqua;
+  position: sticky;
+  top:0;
+}
+table thead tr th{
   border: 1px solid;
-  background-color: #ffffff;
-}
-
-.newProductData, .newDiamondDetails, .oldDiamondDetails{
-  width: 100%;
-  margin-top: 10px;
-  background-color: rgb(209, 206, 206);
-  table-layout: fixed;
-  /* border-collapse: collapse; */
-}
-
-.form thead tr th {
-  background-color: #ccc;
-  font-weight: 900;
-  font-size: 12px;
+  padding: 4px 20px;
   text-transform: capitalize;
-  padding: 10px 2px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  
 }
 
-.form tbody tr td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+table tbody tr td{
+  border: 1px solid ;
+  padding: 4px 20px;
   text-transform: capitalize;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 800;
-  padding: 8px;
-  text-align: center;
 }
 
-.form tfoot{
-  background-color: red;
-}
 
-/* diamonds details */
-.diamonds{
+
+.diamond{
+  height: 2000px;
+  border: 1px solid;
+background-color: rebeccapurple;
   display: flex;
-  margin-top: 20px;
-  background-color: rgb(215, 166, 166);
+justify-content: space-between;
+align-items: center;
 }
-.diamonds section table caption{
+.diamond aside{
   border: 1px solid;
-}
-
-/* new diamonds details */
-.diamonds section{
-  border: 1px solid;
-  height: 200px;
-  margin-left: 2px;
-}
-.diamonds section{
-  padding: 10px;
-}
-.hidedata{
-  background-color: rgb(215, 166, 166);
-  border: none;
+  width: 50%;
+  height: 100%;
+  background-color: red;
 }
