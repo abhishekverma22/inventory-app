@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Stock - Glimmer Grid - Jewellery Inventory</title>
+  <link rel="stylesheet" href="../02_css_file/deleteStock.css">
+  <link rel="stylesheet" href="../02_css_file/main.css">
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav class="logo">
+      <img src="../images/logo.gif" alt="logo">
+      <div class="logoname">
+        <h2>Glimmer Grid</h2>
+        <p>Your Jewels, Our Precision.</p>
+      </div>
+    </nav>
+
+    <nav class="navitems">
+      <a href="./dashboard.html" target="_self">dashboard</a>
+      <a href="./login_page.html" class="logout">logout</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <aside class="search-box">
+      <section>
+        <div class="search-heading">
+          <h2>Search-by</h2>
+        </div>
+        <div class="input-box">
+          <div class="search-tagNumber">
+            <label for="tagNUmber">tag number</label>
+            <input type="text" placeholder="Search by tag number...">
+          </div>
+          <div class="search-weight">
+            <label for="weight">Weight</label>
+            <input type="number" placeholder="Gross Wt...">
+            <p>to</p>
+            <input type="number" placeholder="Net wt...">
+  
+          </div>
+  
+  
+          <div class="search-date">
+            <label for="date">date</label>
+            <input type="date">
+            <p>to</p>
+            <input type="date">
+  
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+  
+          </div>
+  
+          <div class="btn">
+            <button id="search">Search</button>
+          </div>
+  
+        </div>
+      </section>
+    </aside>
+
+    <aside class="show-details">
+      <div class="heading">delete product</div>
+    
+      <div class="data">
+        <table border="1px">
+          <thead>
+            <tr>
+              <th>tag number</th>
+              <th>name</th>
+              <th>purity</th>
+              <th>gross weight</th>
+              <th>net weight</th>
+              <th>diamond weight</th>
+              <th>diamond price</th>
+              <th>other charge</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ra1001</td>
+              <td>ring</td>
+              <td>22kt</td>
+              <td>2.7</td>
+              <td>2.3</td>
+              <td>nil</td>
+              <td>nil</td>
+              <td>nil</td>
+              <td><button class="removeData">remove</button></td>
+            </tr>
+            <tr>
+              <td>ra1004</td>
+              <td>ring</td>
+              <td>22kt</td>
+              <td>2.7</td>
+              <td>2.3</td>
+              <td>nil</td>
+              <td>nil</td>
+              <td>nil</td>
+              <td><button class="removeData">remove</button></td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+  </main>
+
+</body>
+
+</html>

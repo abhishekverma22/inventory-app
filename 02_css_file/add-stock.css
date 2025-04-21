@@ -1,0 +1,93 @@
+.items-Add {
+  width: 100%;
+  padding: 20px;
+}
+
+.items-details {
+  background-color: rgb(211, 211, 211);
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(128, 128, 128, 0.317);
+  margin: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ 
+}
+
+hr {
+  width: 3px;
+  background-color: rgba(71, 69, 69, 0.317);
+}
+
+.item div {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.item div label {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(17, 131, 135);
+}
+
+input,
+select {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 18px;
+  padding-left: 20px;
+  text-transform: capitalize;
+  border: 2px solid;
+  /* outline: none; */
+  border-radius: 5px;
+  background-color: rgb(224, 242, 255);
+  color: black;
+}
+
+.btn {
+  justify-content: space-evenly;
+  padding: 8px;
+}
+
+.btn button {
+  padding: 10px 25px;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.addStock {
+  background-color: cadetblue;
+}
+
+.discard {
+  background-color: red;
+}
+
+.addStock:hover {
+  background-color: aliceblue;
+  border-color: cadetblue;
+}
+
+.discard:hover {
+  background-color: aliceblue;
+  border-color: red;
+
+}
+
+
+.btn button:active {
+  transform: scale(0.9);
+
+}

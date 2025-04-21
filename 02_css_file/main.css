@@ -11,7 +11,7 @@
   font-family: "Varela Round", sans-serif;
 }
 
-header {
+header{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,8 +21,9 @@ header {
   background-color: rgb(255, 255, 255);
   position: sticky;
   top: 0;
-  box-shadow: 0px 5px 5px rgb(108, 99, 99);
+  box-shadow: 0px 5px 5px rgb(108, 99, 99);   
 }
+
 .logo{
   display: flex;
   align-items: center;
@@ -80,9 +81,6 @@ header {
   transition: 0.3s ease-in-out;
   color: #3e5485;
 }
-header .navitems .active{
-  color: rgb(255, 123, 0);
-}
 
 .navitems a:hover {
   border-radius: 20px;
@@ -115,3 +113,16 @@ header .navitems .active{
 }
 
 
+/* heading of each page */
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  border-bottom: 2px solid olive;
+  padding: 20px 0px;
+  background-image: url(../images/invoicebg.jpg);
+  background-size: cover;
+}
