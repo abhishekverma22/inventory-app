@@ -7,7 +7,9 @@
   <title>Dashboard - Glimmer Grid - Jewellery Inventory</title>
   <link rel="stylesheet" href="../02_css_file/main.css">
   <link rel="stylesheet" href="../02_css_file/dashboard.css">
-  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"> 
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+  <script type="module" src="../03_javascrpit_file/logout.js" defer></script> 
+  <script type="module" src="../03_javascrpit_file/firebase.js" defer></script>
 
 </head>
 
@@ -23,7 +25,7 @@
 
     <nav class="navitems">
       <a class="active" >dashboard</a>
-      <a href="./login_page.html" class="logout">logout</a>
+      <a class="logout">logout</a>
 
     </nav>
   </header>
@@ -64,7 +66,7 @@
         <div class="title">
           <h2>Sale</h2>
           <ul>
-            <a href="./invoice.html" target="_blank">
+            <a href="./invoice.html" target="_self">
               <li>New Invoice</li>
             </a>
             <a href="">

@@ -7,7 +7,10 @@
   <title>Glimmer Grid - Jewellery Inventory</title>
   <link rel="stylesheet" href="../02_css_file/main.css"> <!-- main css for header and footer -->
   <link rel="stylesheet" href="../02_css_file/login_page.css"> <!-- login form css -->
-  <script src="../03_javascrpit_file/login_page.js" defer></script> <!-- login js -->
+  <!-- <script src="../03_javascrpit_file/login_page.jsx" defer></script> login js -->
+  <script type="module" src="../03_javascrpit_file/firebase.js" defer ></script>
+  <script type="module" src="../03_javascrpit_file/login_page.js" defer></script>
+
   <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/d8c97984f9.js" crossorigin="anonymous"></script> <!-- font cdn -->
 </head>
@@ -38,14 +41,14 @@
     <section class="loginform">
       <div>
         <label for="userid">User ID</label><br>
-        <input type="text" id="userid" name="userid" placeholder="Enter User ID">
+        <input type="text" id="userid" placeholder="Enter User ID">
       </div>
       <div>
         <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password" placeholder="Enter Password">
+        <input type="password" id="password" placeholder="Enter Password">
       </div>
       <div class="btn">
-        <a href="../01_html_file/dashboard.html"> <button id="login-btn">Login</button></a>
+   <button id="login-btn">Login</button>
       </div>
     </section>
   </main>
