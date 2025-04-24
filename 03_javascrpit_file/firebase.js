@@ -28,10 +28,11 @@ export { auth };
 
 // =========================================================================================================
 // Date setting logic for login page...
+
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const formattedDate = new Intl.DateTimeFormat('en-GB').format(new Date());
-// console.log(formattedDate); // Output: 24/04/2025
+// console.log(formattedDate); // Output: DD/MM/YYYY
 
 const date = new Date();
 
@@ -40,7 +41,28 @@ let dayDate = document.getElementById('day-date');
 dayDate.innerHTML = `<span>Date:</span> ${formattedDate} <span id="day">(${days[date.getDay()]})</span>`
 
 
+
+
 // time logic for login page....
 
-let time = document.getElementById('time');
-time.innerHTML = `<span>Time: </span>${date.toLocaleTimeString()}`
+
+function updateTime() {
+  const now = new Date();
+  const format = num => num.toString().padStart(2, '0');
+
+  let hours = now.getHours();
+  const minutes = format(now.getMinutes());
+  const seconds = format(now.getSeconds());
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+
+  hours = hours % 12 || 12; // convert to 12-hour format
+
+  const timeString = `${format(hours)}:${minutes}:${seconds} ${ampm}`;
+  document.getElementById('time').innerHTML = `<span>Time: </span> ${timeString}`;
+}
+
+setInterval(updateTime, 1000);
+updateTime()
+
+
+

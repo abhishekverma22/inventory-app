@@ -12,6 +12,7 @@ loginBtn.addEventListener('click', () => {
 
   document.getElementById('userid').value = "";
   document.getElementById('password').value = "";
+  
 });
 
 
