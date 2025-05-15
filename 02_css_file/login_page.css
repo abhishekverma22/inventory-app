@@ -51,6 +51,11 @@
   font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
+#error{
+  background-color: red;
+  text-align: center;
+}
+
 .btn {
   text-align: center;
 }

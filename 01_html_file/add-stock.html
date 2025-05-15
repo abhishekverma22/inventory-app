@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sale-Invoice - Glimmer Grid - Jewellery Inventory</title>
   <link rel="stylesheet" href="../02_css_file/main.css">
   <link rel="stylesheet" href="../02_css_file/add-stock.css">
-  <script src="../03_javascrpit_file/add-items.js" defer></script>
+  <script type="module" src="../03_javascrpit_file/add-stock.js" defer></script>
 </head>
+
 <body>
 
   <header>
@@ -18,15 +20,16 @@
         <p>Your Jewels, Our Precision.</p>
       </div>
     </nav>
+    <h1>ADD PRODUCTS</h1>
+     <nav>
+        <div class="navbtn">
+          <button>SIGN OUT</button>
+        </div>
 
-    <nav class="navitems">
-      <a href="./dashboard.html" target="_self">dashboard</a>
-      <a href="./login_page.html" class="logout">logout</a>
-    </nav>
+      </nav>
+
   </header>
   <section class="add-items">
-    <div class="heading">Add product</div>
-
     <div class="items-details">
       <div class="item">
         <div class="tag-number">
@@ -36,13 +39,14 @@
         <hr>
         <div class="tag-name">
           <label for="name">name</label>
-          <input type="text" id="name" required>
+          <input type="text" id="name" name="name" required >
         </div>
       </div>
       <div class="item">
         <div class="seclect">
           <label for="itemType">Select ornament</label>
           <select name="ornament" id="ornament">
+            <option>Ornament Type</option>
             <option value="gold">gold</option>
             <option value="silver">silver</option>
             <option value="diamond">diamond</option>
@@ -52,19 +56,20 @@
         <hr>
         <div class="seclect">
           <label for="purity">Select purity</label>
-        <select name="purity" id="puritySelection">
-          <option value="gold_22kt">22kt</option>
-          <option value="golsd_18kt">18kt</option>
-          <option value="gold_14kt">14kt</option>
-          <option value="silver">silver</option>
-          <option value="silver925">925-silver</option>
-        </select>
+          <select name="purity" id="purity">
+            <option>Product Purity</option>
+            <option value="22kt">22KT</option>
+            <option value="18kt">18KT</option>
+            <option value="14kt">14KT</option>
+            <option value="silver">SILVER</option>
+            <option value="silver925">925-SILVER</option>
+          </select>
         </div>
       </div>
       <div class="item">
         <div class="weight">
           <label for="grossWt">Gross Weight</label>
-        <input type="number" id="grossWt">
+          <input type="number" id="grossWt">
         </div>
         <hr>
         <div class="weight">
@@ -76,43 +81,43 @@
       <div class="item">
         <div class="weight">
           <label for="makingPercent">making-charge %</label>
-        <input type="number" id="makingPercent">
+          <input type="number" id="makingPercent" >
         </div>
         <hr>
         <div class="price">
           <label for="makingTotal">making total</label>
-          <input type="number" id="makingTotal">
+          <input type="number" id="makingTotal" >
         </div>
       </div>
       <div class="item">
         <div class="diamonds">
           <label for="diamondWt">Diamond weight</label>
-        <input type="number" id="diamondWt">
+          <input type="number" id="diamondWt" >
         </div>
         <hr>
         <div class="diamonds">
           <label for="diamondPrice">Diamond Price</label>
-          <input type="number" id="diamondPrice">
+          <input type="number" id="diamondPrice" >
         </div>
 
       </div>
       <div class="item">
         <div class="price">
           <label for="diamondRate">Diamond Rate</label>
-          <input type="number" id="diamondPrice">
+          <input type="number" id="diamondRate" >
         </div>
         <hr>
         <div class="weight">
           <label for="otherCharge">other-charge</label>
-        <input type="number" id="otherCharge">
+          <input type="number" id="otherCharge" >
         </div>
-     
-      </div> 
+
+      </div>
 
       <div class="item">
         <div class="note">
           <label for="note">note</label>
-          <input type="text" id="note">
+          <input type="text" id="note" >
         </div>
         <hr>
         <div class="creationOfDate">
@@ -120,14 +125,16 @@
           <input type="text" id="creationDate" readonly>
         </div>
       </div>
-      
-      
+
+
       <div class="item btn">
-        <button class="addStock">Save</button>
-        <button class="discard">Discard</button>
+      
+        <button class="close">Close</button>
+        <button class="discard" >Discard</button>
+        <button class="addStock" >Save</button>
       </div>
 
-      </div>
+    </div>
 
 
 
@@ -143,9 +150,10 @@
 
 
 
-  
 
- 
-  
+
+
+
 </body>
+
 </html>

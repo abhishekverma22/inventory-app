@@ -1,5 +1,6 @@
 main {
   display: flex;
+  
 }
 
 .search-box {
@@ -8,19 +9,24 @@ main {
   border-right: 2px solid orange;
   text-transform: capitalize;
   padding: 20px;
-position: fixed;
-overflow-y: auto;
+  z-index: -1;
+  position: fixed;
+  overflow-y:auto;
+  height: 88vh;
 }
+
 .search-box .search-heading {
   text-align: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.769);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 .input-box {
   height: 94%;
   width: 100%;
 
 }
+
 .search-tagNumber,
 .search-weight,
 .search-date,
@@ -87,14 +93,14 @@ input {
   background-color: red;
 }
 
-.show-details{
+.show-details {
   width: 80%;
-  /* background-color: rebeccapurple; */
+  background-color: rgb(255, 238, 213);
   height: 100vh;
   margin-left: auto;
 }
 
-table{
+table {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -103,19 +109,22 @@ table{
   border: 2px solid rgb(0, 0, 0);
   border-bottom: none;
 }
-table thead tr th{
+
+table thead tr th {
   padding: 10px;
   font-weight: 600;
-background-color: blueviolet;
+  background-color: rgb(219, 181, 255);
+
 }
 
-table tbody tr td{
+table tbody tr td {
   padding: 8px;
   border: 1px solid black;
   background-color: rgb(228, 243, 255);
 
 }
-.removeData{
+
+.removeData {
   background-color: red;
   padding: 2px 10px;
   text-transform: capitalize;
@@ -126,4 +135,3 @@ table tbody tr td{
   border: none;
   cursor: pointer;
 }
-

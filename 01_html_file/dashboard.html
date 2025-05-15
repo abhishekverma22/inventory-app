@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="../02_css_file/main.css">
   <link rel="stylesheet" href="../02_css_file/dashboard.css">
   <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
-  <script type="module" src="../03_javascrpit_file/logout.js" defer></script> 
-  <script type="module" src="../03_javascrpit_file/firebase.js" defer></script>
 
 </head>
 
@@ -22,10 +20,11 @@
         <p>Your Jewels, Our Precision.</p>
       </div>
     </nav>
-
-    <nav class="navitems">
-      <a class="active" >dashboard</a>
-      <a class="logout">logout</a>
+    <h1>Dashboard</h1>
+    <nav>
+      <div class="navbtn">
+        <button>SIGN OUT</button>
+      </div>
 
     </nav>
   </header>
@@ -35,90 +34,91 @@
     <section class="items-details">
       <div class="title">
         <h2>Stocks</h2>
+
+        <ul>
+          <a href="./add-stock.html" target="_self">
+            <li>Add Product</li>
+          </a>
+          <a href="./deleteStock.html" target="_self">
+            <li>Delete Product</li>
+          </a>
+          <a href="">
+            <li>Modify Product</li>
+          </a>
+
+          <a href="">
+            <li>Product Details</li>
+          </a>
+          <a href="">
+            <li>Ledger</li>
+          </a>
+          <a href="">
+            <li>Daily Sale Items</li>
+          </a>
+
+
+        </ul>
       </div>
-      <ul>
-        <a href="./add-stock.html" target="_self">
-          <li>Add Stock</li>
-        </a>
-        <a href="./deleteStock.html" target="_self">
-          <li>Delete Stock</li>
-        </a>
-        <a href="">
-          <li>Modify Stock</li>
-        </a>
-
-        <a href="">
-          <li>Stock Details</li>
-        </a>
-        <a href="">
-          <li>Ledger</li>
-        </a>
-        <a href="">
-          <li>Daily Sale Items</li>
-        </a>
-
-       
-      </ul>
 
     </section>
-   
-      <section class="sale">
-        <div class="title">
-          <h2>Sale</h2>
-          <ul>
-            <a href="./invoice.html" target="_self">
-              <li>New Invoice</li>
-            </a>
-            <a href="">
-              <li>Search Invoice</li>
-            </a>
-            <a href="">
-              <li>New Order</li>
-            </a>
-            <a href="">
-              <li>Order Details</li>
-            </a>
-            
-          </ul>
-        </div>
-      </section>
 
-      <section class="scheme">
-        <div class="title">
-          <h2>Scheme</h2>
-          <ul>
-            <a href="">
-              <li>New Scheme</li>
-            </a>
-            <a href="">
-              <li>Show details</li>
-            </a>
-            <a href="">
-              <li>Add Bonus</li>
-            </a>
-            
-          </ul>
-        </div>
-      </section>
-      <section class="admin">
-        <div class="title">
-          <h2>Admin Acess</h2>
-          <ul>
-            <a href="">
-              <li>Add user</li>
-            </a>
-            <a href="">
-              <li>Allow Acess</li>
-            </a>
-            <a href="">
-              <li>Daily Sale</li>
-            </a>
-           
-            
-          </ul>
-        </div>
-      </section>
-    
+    <section class="sale">
+      <div class="title">
+        <h2>Sale</h2>
+        <ul>
+          <a href="./invoice.html" target="_self">
+            <li>New Invoice</li>
+          </a>
+          <a href="">
+            <li>Search Invoice</li>
+          </a>
+          <a href="">
+            <li>New Order</li>
+          </a>
+          <a href="">
+            <li>Order Details</li>
+          </a>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="scheme">
+      <div class="title">
+        <h2>Scheme</h2>
+        <ul>
+          <a href="">
+            <li>New Scheme</li>
+          </a>
+          <a href="">
+            <li>Show details</li>
+          </a>
+          <a href="">
+            <li>Add Bonus</li>
+          </a>
+
+        </ul>
+      </div>
+    </section>
+    <section class="admin">
+      <div class="title">
+        <h2>Admin Acess</h2>
+        <ul>
+          <a href="">
+            <li>Add user</li>
+          </a>
+          <a href="">
+            <li>Allow Acess</li>
+          </a>
+          <a href="">
+            <li>Daily Sale</li>
+          </a>
+
+
+        </ul>
+      </div>
+    </section>
+
     <!-- <aside>
       <img src="../images/logo.gif" alt="Shop_logo">
 
